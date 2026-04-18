@@ -1,0 +1,7 @@
+[2026-04-18T00:27:29Z] === AST ITERATION 1 START | repo=lancedb/lancedb sha=93aa0df9 ===
+[2026-04-18T00:27:29Z] [iter=1] PHASE START: ast repo=lancedb/lancedb sha=93aa0df9
+[2026-04-18T00:27:29Z] [iter=1] Building AST aggregate chunks
+[2026-04-18T00:32:38Z] [iter=1] AST chunks built count=1 triples=3782637
+[2026-04-18T00:32:38Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/93aa0df9729840c6f059976b41e193b5e8922fa7/.complete
+[2026-04-18T00:32:38Z] [iter=1] PHASE END: ast elapsed_s=309 elapsed_min=5.2
+[2026-04-18T00:32:38Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
