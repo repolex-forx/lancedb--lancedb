@@ -1,0 +1,98 @@
+[2026-04-18T04:44:53Z] === ENRICH ITERATION 2 START | repo=lancedb/lancedb sha=93aa0df9 ===
+[2026-04-18T04:44:53Z] [iter=2] PHASE START: enrich repo=lancedb/lancedb sha=93aa0df9 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/93aa0df9-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/93aa0df9729840c6f059976b41e193b5e8922fa7.nq.gz
+[2026-04-18T04:44:53Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-18T04:45:27Z] [iter=2] AST store loaded triples=3782637 load_secs=32 mem_mb=983 MB
+[2026-04-18T04:45:27Z] [iter=2] Step 2: Finding LSP targets mem_mb=983 MB
+[2026-04-18T04:45:35Z] [iter=2] LSP targets found call_sites=40394 imports=1553 extends=217 implements=93 secs=8
+[2026-04-18T04:45:39Z] [iter=2] Loaded checkpoint partial graph triples=109099
+[2026-04-18T04:45:46Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=983 MB
+[2026-04-18T04:46:09Z] [iter=2] Position index built positions=247643 nodes_with_types=317933 secs=23 mem_mb=1088 MB
+[2026-04-18T04:46:09Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1088 MB already_completed_types=[] already_completed_files=66
+[2026-04-18T04:46:09Z] [iter=2] Resolving target type target_type=call_site count=40394
+[2026-04-18T04:47:38Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.7 files_done=0 resolved=0 errors=0 current=rust/lancedb/src/table/query.rs
+[2026-04-18T04:55:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=10.2 files_done=1 resolved=110 errors=236 current=nodejs/src/connection.rs
+[2026-04-18T04:56:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=11.8 files_done=2 resolved=159 errors=296 current=rust/lancedb/src/connection.rs
+[2026-04-18T05:01:07Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=16.2 files_done=3 resolved=308 errors=474 current=rust/lancedb/src/test_utils/connection.rs
+[2026-04-18T05:02:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=17.3 files_done=4 resolved=345 errors=515 current=python/src/expr.rs
+[2026-04-18T05:03:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.7 files_done=5 resolved=390 errors=571 current=rust/lancedb/src/table/optimize.rs
+[2026-04-18T05:09:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=24.4 files_done=6 resolved=520 errors=800 current=python/src/arrow.rs
+[2026-04-18T05:10:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=25.3 files_done=8 resolved=555 errors=834 current=rust/lancedb/src/table/dataset.rs
+[2026-04-18T05:16:29Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=31.6 files_done=9 resolved=726 errors=1086 current=rust/lancedb/src/table/update.rs
+[2026-04-18T05:19:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=34.6 files_done=10 resolved=766 errors=1207 current=rust/lancedb/src/table/datafusion/cast.rs
+[2026-04-18T05:24:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=39.2 files_done=11 resolved=963 errors=1392 current=rust/lancedb/tests/embedding_registry_test.rs
+[2026-04-18T05:27:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=42.9 files_done=12 resolved=1048 errors=1540 current=rust/lancedb/examples/openai.rs
+[2026-04-18T05:28:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=43.6 files_done=13 resolved=1061 errors=1568 current=nodejs/src/permutation.rs
+[2026-04-18T05:29:40Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=44.8 files_done=14 resolved=1088 errors=1614 current=rust/lancedb/src/database.rs
+[2026-04-18T05:30:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=45.5 files_done=16 resolved=1113 errors=1644 current=rust/lancedb/src/utils/mod.rs
+[2026-04-18T05:32:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=47.4 files_done=17 resolved=1261 errors=1718 current=python/src/permutation.rs
+[2026-04-18T05:35:03Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=50.2 files_done=18 resolved=1302 errors=1828 current=nodejs/src/query.rs
+[2026-04-18T05:36:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=51.6 files_done=19 resolved=1513 errors=1887 current=nodejs/src/index.rs
+[2026-04-18T05:38:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=53.1 files_done=20 resolved=1545 errors=1947 current=rust/lancedb/src/table/schema_evolution.rs
+[2026-04-18T05:43:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=58.9 files_done=21 resolved=1644 errors=2178 current=rust/lancedb/src/table/write_progress.rs
+[2026-04-18T05:46:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=61.4 files_done=22 resolved=1734 errors=2280 current=rust/lancedb/src/rerankers/rrf.rs
+[2026-04-18T05:47:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=62.5 files_done=23 resolved=1774 errors=2321 current=rust/lancedb/src/dataloader/permutation/shuffle.rs
+[2026-04-18T05:50:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=65.8 files_done=24 resolved=1891 errors=2454 current=nodejs/src/remote.rs
+[2026-04-18T05:52:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=68.0 files_done=26 resolved=2027 errors=2541 current=python/src/error.rs
+[2026-04-18T05:53:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=68.9 files_done=27 resolved=2051 errors=2579 current=rust/lancedb/src/data/inspect.rs
+[2026-04-18T05:54:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=70.1 files_done=28 resolved=2085 errors=2625 current=rust/lancedb/src/table/add_data.rs
+[2026-04-18T05:59:36Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=74.7 files_done=29 resolved=2213 errors=2810 current=rust/lancedb/src/io/object_store.rs
+[2026-04-18T06:01:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=76.2 files_done=30 resolved=2292 errors=2867 current=rust/lancedb/src/embeddings/sentence_transformers.rs
+[2026-04-18T06:05:38Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=80.7 files_done=32 resolved=2559 errors=3051 current=rust/lancedb/src/query/hybrid.rs
+[2026-04-18T06:07:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=82.9 files_done=33 resolved=2686 errors=3139 current=rust/lancedb/src/embeddings/openai.rs
+[2026-04-18T06:09:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=84.6 files_done=35 resolved=2720 errors=3206 current=rust/lancedb/src/dataloader/permutation/builder.rs
+[2026-04-18T06:11:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=86.9 files_done=36 resolved=2783 errors=3298 current=rust/lancedb/src/index.rs
+[2026-04-18T06:12:38Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=87.7 files_done=38 resolved=2826 errors=3332 current=rust/lancedb/src/table/datafusion/reject_nan.rs
+[2026-04-18T06:13:52Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=89.0 files_done=39 resolved=2907 errors=3381 current=nodejs/src/util.rs
+[2026-04-18T06:14:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=89.8 files_done=41 resolved=2942 errors=3411 current=nodejs/src/merge.rs
+[2026-04-18T06:17:03Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=92.2 files_done=44 resolved=3016 errors=3505 current=nodejs/src/rerankers.rs
+[2026-04-18T06:17:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=92.9 files_done=45 resolved=3029 errors=3536 current=rust/lancedb/src/data/sanitize.rs
+[2026-04-18T06:19:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=94.4 files_done=46 resolved=3095 errors=3593 current=rust/lancedb/src/remote/table/insert.rs
+[2026-04-18T06:21:44Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=96.8 files_done=47 resolved=3238 errors=3691 current=rust/lancedb/tests/embeddings_parallel_test.rs
+[2026-04-18T06:23:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=98.2 files_done=48 resolved=3324 errors=3747 current=rust/lancedb/src/test_utils/embeddings.rs
+[2026-04-18T06:23:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=98.9 files_done=50 resolved=3372 errors=3772 current=rust/lancedb/src/ipc.rs
+[2026-04-18T06:24:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=99.4 files_done=51 resolved=3403 errors=3793 current=rust/lancedb/src/polars_arrow_convertors.rs
+[2026-04-18T06:25:54Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=101.0 files_done=53 resolved=3430 errors=3857 current=nodejs/src/session.rs
+[2026-04-18T06:26:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=101.6 files_done=55 resolved=3460 errors=3882 current=rust/lancedb/src/expr.rs
+[2026-04-18T06:27:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=102.6 files_done=56 resolved=3488 errors=3919 current=rust/lancedb/src/error.rs
+[2026-04-18T06:28:04Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=103.2 files_done=58 resolved=3501 errors=3944 current=rust/lancedb/examples/hybrid_search.rs
+[2026-04-18T06:28:55Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=104.0 files_done=59 resolved=3521 errors=3978 current=python/src/header.rs
+[2026-04-18T06:29:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=104.7 files_done=61 resolved=3540 errors=4004 current=rust/lancedb/src/dataloader/permutation/util.rs
+[2026-04-18T06:30:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=105.2 files_done=62 resolved=3558 errors=4026 current=python/src/table/scannable.rs
+[2026-04-18T06:30:40Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=105.8 files_done=63 resolved=3584 errors=4047 current=python/src/util.rs
+[2026-04-18T06:31:36Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=106.7 files_done=65 resolved=3602 errors=4084 current=nodejs/src/lib.rs
+[2026-04-18T06:32:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=107.8 files_done=68 resolved=3648 errors=4126 current=python/src/lib.rs
+[2026-04-18T06:33:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=108.5 files_done=69 resolved=3661 errors=4153 current=rust/lancedb/examples/simple.rs
+[2026-04-18T06:34:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=109.3 files_done=70 resolved=3679 errors=4187 current=rust/lancedb/src/lib.rs
+[2026-04-18T06:36:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=111.9 files_done=77 resolved=3711 errors=4285 current=python/python/lancedb/dependencies.py
+[2026-04-18T06:37:22Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=112.5 files_done=78 resolved=3739 errors=4306 current=python/python/lancedb/embeddings/jinaai.py
+[2026-04-18T06:38:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=113.5 files_done=79 resolved=3775 errors=4347 current=python/python/lancedb/table.py
+[2026-04-18T06:48:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=123.6 files_done=80 resolved=3912 errors=4747 current=python/python/tests/docs/test_pydantic_integration.py
+[2026-04-18T06:50:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=126.0 files_done=83 resolved=3964 errors=4841 current=python/python/tests/test_embeddings_slow.py
+[2026-04-18T07:01:28Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=136.6 files_done=84 resolved=4040 errors=5264 current=python/python/tests/test_huggingface.py
+[2026-04-18T07:02:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=137.6 files_done=85 resolved=4048 errors=5305 current=python/python/lancedb/embeddings/open_clip.py
+[2026-04-18T07:03:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=138.8 files_done=86 resolved=4072 errors=5352 current=python/python/tests/test_rerankers.py
+[2026-04-18T07:08:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=143.6 files_done=87 resolved=4113 errors=5545 current=python/python/tests/test_pyarrow.py
+[2026-04-18T07:09:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=144.4 files_done=88 resolved=4114 errors=5576 current=python/python/tests/test_namespace.py
+[2026-04-18T07:13:10Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=148.3 files_done=89 resolved=4187 errors=5731 current=python/python/tests/test_table.py
+[2026-04-18T07:28:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=163.6 files_done=90 resolved=4289 errors=6346 current=python/python/tests/test_pydantic.py
+[2026-04-18T07:30:11Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=165.3 files_done=91 resolved=4312 errors=6412 current=python/python/lancedb/rerankers/base.py
+[2026-04-18T07:32:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=167.9 files_done=93 resolved=4381 errors=6516 current=python/python/tests/test_db.py
+[2026-04-18T07:39:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=174.9 files_done=94 resolved=4456 errors=6794 current=python/python/tests/test_index.py
+[2026-04-18T07:41:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=176.9 files_done=95 resolved=4492 errors=6875 current=python/python/lancedb/embeddings/colpali.py
+[2026-04-18T07:43:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=178.5 files_done=96 resolved=4513 errors=6941 current=python/python/tests/test_remote_db.py
+[2026-04-18T07:52:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=187.4 files_done=97 resolved=4602 errors=7297 current=python/python/tests/docs/test_embeddings_optional.py
+[2026-04-18T07:53:10Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=188.3 files_done=98 resolved=4606 errors=7331 current=python/python/tests/docs/test_search.py
+[2026-04-18T07:57:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=192.4 files_done=99 resolved=4640 errors=7497 current=python/python/lancedb/remote/__init__.py
+[2026-04-18T07:59:24Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=194.5 files_done=101 resolved=4659 errors=7581 current=python/python/lancedb/util.py
+[2026-04-18T08:00:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=195.8 files_done=102 resolved=4698 errors=7633 current=python/python/tests/test_permutation.py
+[2026-04-18T08:08:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=204.1 files_done=103 resolved=4860 errors=7964 current=python/python/lancedb/fts.py
+[2026-04-18T08:09:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=204.8 files_done=104 resolved=4873 errors=7992 current=python/python/tests/test_fts.py
+[2026-04-18T08:19:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=214.8 files_done=105 resolved=4985 errors=8392 current=python/python/tests/test_query.py
+[2026-04-18T08:35:44Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=230.8 files_done=106 resolved=5072 errors=9035 current=python/python/tests/test_embeddings.py
+[2026-04-18T08:40:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=235.4 files_done=107 resolved=5135 errors=9219 current=ci/check_breaking_changes.py
+[2026-04-18T08:43:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=238.2 files_done=109 resolved=5179 errors=9331 current=python/python/lancedb/pydantic.py
+[2026-04-18T08:44:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=239.5 files_done=110 resolved=5224 errors=9381 current=python/python/lancedb/expr.py
+[2026-04-18T08:44:58Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=176 new_files_this_iter=110 mem_mb=1148 MB
+[2026-04-18T08:44:58Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/93aa0df9729840c6f059976b41e193b5e8922fa7.nq.gz triples=191305
+[2026-04-18T08:45:02Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-04-18T08:45:02Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=14405 elapsed_min=240.1 files_completed=176
