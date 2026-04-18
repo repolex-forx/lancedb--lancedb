@@ -1,0 +1,60 @@
+[2026-04-18T08:49:23Z] === ENRICH ITERATION 3 START | repo=lancedb/lancedb sha=93aa0df9 ===
+[2026-04-18T08:49:23Z] [iter=3] PHASE START: enrich repo=lancedb/lancedb sha=93aa0df9 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/93aa0df9-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/93aa0df9729840c6f059976b41e193b5e8922fa7.nq.gz
+[2026-04-18T08:49:23Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-18T08:50:00Z] [iter=3] AST store loaded triples=3782637 load_secs=36 mem_mb=914 MB
+[2026-04-18T08:50:00Z] [iter=3] Step 2: Finding LSP targets mem_mb=914 MB
+[2026-04-18T08:50:08Z] [iter=3] LSP targets found call_sites=40394 imports=1553 extends=217 implements=93 secs=8
+[2026-04-18T08:50:17Z] [iter=3] Loaded checkpoint partial graph triples=191305
+[2026-04-18T08:50:23Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=914 MB
+[2026-04-18T08:50:45Z] [iter=3] Position index built positions=247643 nodes_with_types=317933 secs=22 mem_mb=1302 MB
+[2026-04-18T08:50:45Z] [iter=3] Step 3: Starting LSP resolution mem_mb=1302 MB already_completed_types=[] already_completed_files=176
+[2026-04-18T08:50:45Z] [iter=3] Resolving target type target_type=call_site count=40394
+[2026-04-18T08:52:12Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=0 resolved=0 errors=0 current=python/python/lancedb/expr.py
+[2026-04-18T08:53:47Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=4.4 files_done=1 resolved=1 errors=77 current=python/python/lancedb/remote/table.py
+[2026-04-18T08:55:34Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=6.2 files_done=2 resolved=16 errors=163 current=python/python/lancedb/rerankers/cross_encoder.py
+[2026-04-18T08:56:07Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=6.7 files_done=4 resolved=23 errors=190 current=python/python/tests/docs/test_guide_tables.py
+[2026-04-18T08:58:43Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=9.3 files_done=5 resolved=39 errors=314 current=python/python/lancedb/embeddings/siglip.py
+[2026-04-18T08:59:49Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=6 resolved=67 errors=365 current=python/python/tests/docs/test_python.py
+[2026-04-18T09:00:41Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=7 resolved=83 errors=407 current=python/python/lancedb/embeddings/voyageai.py
+[2026-04-18T09:01:51Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=12.5 files_done=8 resolved=130 errors=464 current=python/python/lancedb/embeddings/gte_mlx_model.py
+[2026-04-18T09:03:48Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=14.4 files_done=9 resolved=139 errors=513 current=python/python/lancedb/rerankers/mrr.py
+[2026-04-18T09:04:39Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=11 resolved=182 errors=554 current=python/python/tests/test_util.py
+[2026-04-18T09:06:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=17.3 files_done=12 resolved=199 errors=650 current=python/python/lancedb/query.py
+[2026-04-18T09:12:32Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=23.1 files_done=13 resolved=346 errors=935 current=python/python/lancedb/common.py
+[2026-04-18T09:13:37Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=24.2 files_done=15 resolved=372 errors=988 current=python/python/lancedb/embeddings/utils.py
+[2026-04-18T09:15:45Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=26.4 files_done=17 resolved=426 errors=1091 current=python/python/lancedb/rerankers/cohere.py
+[2026-04-18T09:16:28Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=27.1 files_done=19 resolved=445 errors=1124 current=python/python/lancedb/rerankers/rrf.py
+[2026-04-18T09:18:11Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=28.8 files_done=22 resolved=483 errors=1208 current=ci/semver_sort.py
+[2026-04-18T09:19:49Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=30.4 files_done=24 resolved=512 errors=1287 current=python/python/tests/docs/test_guide_index.py
+[2026-04-18T09:21:02Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=31.7 files_done=25 resolved=524 errors=1346 current=python/python/tests/test_duckdb.py
+[2026-04-18T09:21:39Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=32.3 files_done=27 resolved=530 errors=1376 current=python/python/lancedb/conftest.py
+[2026-04-18T09:22:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=32.9 files_done=29 resolved=550 errors=1406 current=python/python/lancedb/rerankers/linear_combination.py
+[2026-04-18T09:22:58Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=33.6 files_done=31 resolved=569 errors=1440 current=python/python/tests/docs/test_multivector.py
+[2026-04-18T09:25:05Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=35.7 files_done=33 resolved=607 errors=1542 current=python/python/lancedb/embeddings/imagebind.py
+[2026-04-18T09:26:06Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=36.7 files_done=34 resolved=613 errors=1592 current=python/python/lancedb/rerankers/jinaai.py
+[2026-04-18T09:27:10Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=37.8 files_done=36 resolved=663 errors=1643 current=python/python/lancedb/embeddings/gemini_text.py
+[2026-04-18T09:28:28Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=39.1 files_done=39 resolved=686 errors=1706 current=python/python/tests/docs/test_distance_range.py
+[2026-04-18T09:29:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=39.9 files_done=41 resolved=693 errors=1745 current=python/python/lancedb/embeddings/transformers.py
+[2026-04-18T09:30:14Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=40.9 files_done=43 resolved=716 errors=1792 current=python/python/tests/test_torch.py
+[2026-04-18T09:30:47Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=41.4 files_done=45 resolved=720 errors=1818 current=python/python/lancedb/rerankers/util.py
+[2026-04-18T09:31:19Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=41.9 files_done=48 resolved=728 errors=1844 current=python/python/tests/conftest.py
+[2026-04-18T09:32:11Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=42.8 files_done=52 resolved=747 errors=1886 current=python/python/lancedb/embeddings/bedrock.py
+[2026-04-18T09:33:18Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=43.9 files_done=54 resolved=762 errors=1941 current=python/python/lancedb/arrow.py
+[2026-04-18T09:33:51Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=44.5 files_done=57 resolved=785 errors=1967 current=python/python/tests/test_s3_bucket_dots.py
+[2026-04-18T09:34:39Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=45.3 files_done=61 resolved=808 errors=2006 current=python/python/tests/utils.py
+[2026-04-18T09:35:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=45.9 files_done=68 resolved=834 errors=2036 current=python/python/lancedb/background_loop.py
+[2026-04-18T09:36:26Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=47.1 files_done=73 resolved=857 errors=2067 current=java/lancedb-core/src/main/java/com/lancedb/LanceDbNamespaceClientBuilder.java
+[2026-04-18T09:37:07Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=47.7 files_done=75 resolved=867 errors=2098 current=docs/src/extra_js/reo.js
+[2026-04-18T09:37:09Z] [iter=3] Target type resolved target_type=call_site resolved=869 errors=2099 secs=2784 mem_mb=1302 MB
+[2026-04-18T09:37:09Z] [iter=3] Resolving target type target_type=import_statement count=1553
+[2026-04-18T09:37:53Z] [iter=3] HEARTBEAT target_type=import_statement elapsed_min=48.5 files_done=71 resolved=271 errors=0 current=rust/lancedb/src/index/scalar.rs
+[2026-04-18T09:38:55Z] [iter=3] HEARTBEAT target_type=import_statement elapsed_min=49.5 files_done=72 resolved=273 errors=0 current=nodejs/lancedb/rerankers/index.ts
+[2026-04-18T09:39:05Z] [iter=3] Target type resolved target_type=import_statement resolved=273 errors=0 secs=116 mem_mb=1302 MB
+[2026-04-18T09:39:05Z] [iter=3] Resolving target type target_type=extends_clause count=217
+[2026-04-18T09:39:08Z] [iter=3] Target type resolved target_type=extends_clause resolved=87 errors=0 secs=3 mem_mb=1302 MB
+[2026-04-18T09:39:08Z] [iter=3] Resolving target type target_type=implements_clause count=93
+[2026-04-18T09:39:35Z] [iter=3] Target type resolved target_type=implements_clause resolved=0 errors=0 secs=27 mem_mb=1302 MB
+[2026-04-18T09:42:54Z] [iter=3] Step 5: Writing final enrichment file triples=303209
+[2026-04-18T09:43:01Z] [iter=3] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/93aa0df9729840c6f059976b41e193b5e8922fa7.nq.gz size_kb=7499
+[2026-04-18T09:43:01Z] [iter=3] Checkpoint cleared (enrichment complete)
+[2026-04-18T09:43:01Z] [iter=3] PHASE END: enrich elapsed_s=3218 elapsed_min=53.6 total_triples=303209
