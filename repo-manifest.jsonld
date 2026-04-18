@@ -10,7 +10,7 @@
       "git:hexsha": "93aa0df9729840c6f059976b41e193b5e8922fa7",
       "repolex:parseStatus": "parsed",
       "git:tagName": "v0.28.0-beta.1",
-      "repolex:parsedAt": "2026-04-17T23:56:04.485172+00:00"
+      "repolex:parsedAt": "2026-04-18T00:21:24.356841+00:00"
     },
     {
       "@id": "https://repolex.ai/r/lancedb/lancedb/commit/e0e7e01ea895d56577c64dc6aa0d3c59c4bc89f5",
